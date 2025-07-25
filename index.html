@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic-Tac-Toe AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="player-inputs">
+      <input type="text" id="player1" placeholder="Player 1 (You) Name" />
+      <input type="text" value="AI" disabled />
+      <button id="startBtn">Start Game</button>
+    </div>
+    <div class="scoreboard">
+      <span id="scoreX">X: 0</span> |
+      <span id="scoreO">O: 0</span>
+    </div>
+    <div class="board" id="board">
+      <!-- 9 Cells -->
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <div id="status"></div>
+    <button id="resetBtn">Restart Round</button>
+  </div>
+
+  <audio id="clickSound" src="assets/click.wav"></audio>
+  <audio id="winSound" src="assets/win.wav"></audio>
+  <audio id="drawSound" src="assets/draw.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
